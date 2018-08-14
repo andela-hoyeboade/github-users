@@ -1,0 +1,15 @@
+<div class="followers-chart">
+  <ngx-charts-bar-vertical
+    [view]="followersService.chartOptions.view"
+    [scheme]="followersService.chartOptions.scheme"
+    [results]="usersFollowersChartData"
+    [gradient]="followersService.chartOptions.gradient"
+    [xAxis]="followersService.chartOptions.xAxis"
+    [yAxis]="followersService.chartOptions.yAxis"
+    [legend]="followersService.chartOptions.gradient"
+    [showXAxisLabel]="followersService.chartOptions.showXAxisLabel"
+    [showYAxisLabel]="followersService.chartOptions.showYAxisLabel"
+    [xAxisLabel]="followersService.chartOptions.xAxisLabel"
+    [yAxisLabel]="followersService.chartOptions.yAxisLabel">
+  </ngx-charts-bar-vertical>
+</div>
