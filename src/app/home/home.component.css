@@ -1,0 +1,40 @@
+.search-users {
+  left: 20%;
+  right: 20%;
+  position: absolute;
+}
+
+.search-users .search-button {
+  margin-left: 3px;
+}
+
+.search-users-form mat-form-field.username {
+  width: 260px;
+}
+
+.users-list table {
+  width: 100%;
+}
+
+.users-list tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.users-list td:first-child {
+  width: 10%;
+}
+
+.users-list td:not(:first-child),
+.users-list th:not(:first-child) {
+  text-align: center;
+}
+
+.user-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+
+.result-count {
+  color: grey;
+}
