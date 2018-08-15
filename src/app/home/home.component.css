@@ -27,6 +27,7 @@
 .users-list td:not(:first-child),
 .users-list th:not(:first-child) {
   text-align: center;
+  cursor: pointer;
 }
 
 .user-avatar img {

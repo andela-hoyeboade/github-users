@@ -25,10 +25,6 @@ export class DummyDataService {
       });
     }
   }
-
-  user(): IUser {
-    return {username: faker.internet.userName(), avatar: faker.internet.avatar()}
-  }
 }
 
 
