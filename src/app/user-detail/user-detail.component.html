@@ -1,5 +1,5 @@
-<div class="user-detail center">
-  <img [src]="user.avatar" class="center"/>
+<div class="user-detail center" *ngIf="user">
+  <img [src]="user.avatar_url" class="center"/>
   <br/>
-  <div class="center">{{ user.username }}</div>
+  <div class="center">{{ user.login }}</div>
 </div>

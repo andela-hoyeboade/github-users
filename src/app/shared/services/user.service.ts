@@ -17,7 +17,7 @@ export class UserService {
     return this._httpService.searchUsers(query)
   }
 
-  getUserDetail(): IUser {
-    return this._dummyDataService.user()
+  fetchUser(userLogin): Observable<IUser> {
+    return this._httpService.fetchUser(userLogin)
   }
 }

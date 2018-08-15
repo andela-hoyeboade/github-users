@@ -7,7 +7,7 @@ import {FollowersComponent} from "./followers/followers.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'users/:username', component: UserDetailComponent},
+  {path: 'users/:login', component: UserDetailComponent},
   {path: 'followers', component: FollowersComponent}
 ];
 
