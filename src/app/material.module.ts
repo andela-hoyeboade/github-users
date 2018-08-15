@@ -7,11 +7,12 @@ import {
   MatCardModule,
   MatFormFieldModule,
   MatInputModule,
-  MatDividerModule
+  MatDividerModule,
+  MatSnackBarModule,
 } from '@angular/material';
 
 @NgModule({
-  exports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatDividerModule, MatTableModule],
+  exports: [MatFormFieldModule, MatInputModule, MatButtonModule, MatDividerModule, MatTableModule, MatSnackBarModule],
 })
 
 export class MyMaterialModule {

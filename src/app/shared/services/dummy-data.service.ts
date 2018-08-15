@@ -29,15 +29,6 @@ export class DummyDataService {
   user(): IUser {
     return {username: faker.internet.userName(), avatar: faker.internet.avatar()}
   }
-
-  users(count: number = 10): IUser[] {
-    if (count === 1) {
-      return [this.user()]
-    }
-    return Array.from(Array(count), () => {
-      return this.user()
-    });
-  }
 }
 
 
