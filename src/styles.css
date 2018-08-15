@@ -1,15 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Roboto', sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 .text-center {
   text-align: center;
 }
+
 .center {
   margin: auto;
   display: block;
   text-align: center;
 }
+
 .pointer {
   cursor: pointer;
+}
+
+.snack-bar-success {
+  background-color: #dff0d8;
+  border-color: #d0e9c6;
+  color: #3c763d;;
+}
+
+.snack-bar-error {
+  background-color: #f2dede;
+  border-color: #ebcccc;
+  color: #a94442;
+}
+
+.snack-bar-warning {
+  background-color: #fcf8e3;
+  border-color: #faf2cc;
+  color: #8a6d3b;
+}
+
+.snack-bar-info {
+  background-color: #d9edf7;
+  border-color: #bcdff1;
+  color: #31708f;
 }
