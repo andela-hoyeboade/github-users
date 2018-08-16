@@ -10,13 +10,9 @@ export class DummyDataService {
   }
 
   colors(count: number = 1) {
-    if (count === 1) {
-      return [faker.internet.color()]
-    } else {
-      return Array.from(Array(count), () => {
-        return faker.internet.color()
-      });
-    }
+    return Array.from(Array(count), () => {
+      return faker.internet.color()
+    });
   }
 }
 
