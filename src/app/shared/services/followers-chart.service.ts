@@ -1,13 +1,12 @@
 import {Injectable} from '@angular/core';
 
-import {IUserFollowerChart} from "../interfaces/user-to-follower-chart";
 import {DummyDataService} from "./dummy-data.service";
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class FollowersService {
+export class FollowersChartService {
 
   usersCount: number = 10;
   chartOptions: any = {};
@@ -18,7 +17,6 @@ export class FollowersService {
 
   setChartOptions() {
     this.chartOptions = {
-      view: [700, 400],
       scheme: {
         domain: this._dummyDataService.colors(this.usersCount)
       },
@@ -30,11 +28,7 @@ export class FollowersService {
       showXAxisLabel: true,
       showYAxisLabel: true,
       xAxisLabel: 'Users',
-      yAxisLabel: 'Followers'
+      yAxisLabel: 'No of Followers'
     }
-  }
-
-  getUsersFollowersChartData(): IUserFollowerChart[] {
-    return this._dummyDataService.usersFollowersChartData(this.usersCount)
   }
 }

@@ -1,0 +1,25 @@
+<h2 class="result-count">Results Count: {{resultsCount}}</h2>
+
+<div class="users-list" *ngIf="searchedUsers?.length">
+  <table mat-table [dataSource]="searchedUsers" class="mat-elevation-z8">
+    <ng-container matColumnDef="no">
+      <th mat-header-cell *matHeaderCellDef> No.</th>
+      <td mat-cell *matCellDef="let i=index"> {{1 + i}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="avatar">
+      <th mat-header-cell *matHeaderCellDef> Avatar</th>
+      <td mat-cell *matCellDef="let user" class="user-avatar" routerLink="users/{{user.login}}"><img
+        [src]="user.avatar_url" alt="Avatar"/></td>
+    </ng-container>
+
+    <ng-container matColumnDef="login">
+      <th mat-header-cell *matHeaderCellDef> Login</th>
+      <td mat-cell *matCellDef="let user" routerLink="users/{{user.login}}"> {{user.login}}</td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+  </table>
+</div>

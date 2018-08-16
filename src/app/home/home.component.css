@@ -12,30 +12,8 @@
   width: 260px;
 }
 
-.users-list table {
-  width: 100%;
+.action-links {
+  color: #0645AD;
+  text-decoration: underline;
 }
 
-.users-list tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-.users-list td:first-child {
-  width: 10%;
-}
-
-.users-list td:not(:first-child),
-.users-list th:not(:first-child) {
-  text-align: center;
-  cursor: pointer;
-}
-
-.user-avatar img {
-  width: 40px;
-  height: 40px;
-  border-radius: 25px;
-}
-
-.result-count {
-  color: grey;
-}
