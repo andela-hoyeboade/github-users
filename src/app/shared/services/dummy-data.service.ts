@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import faker from 'faker';
-import {IUser} from "../interfaces/user";
 
 @Injectable({
   providedIn: 'root'
@@ -8,12 +7,6 @@ import {IUser} from "../interfaces/user";
 export class DummyDataService {
 
   constructor() {
-  }
-
-  usersFollowersChartData(count: number = 10) {
-    return Array.from(Array(count), () => {
-      return {name: faker.internet.userName(), value: faker.random.number(9999)}
-    });
   }
 
   colors(count: number = 1) {
