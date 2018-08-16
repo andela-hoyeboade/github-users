@@ -1,9 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {IUser} from "../shared/interfaces/user";
 import {UserService} from "../shared/services/user.service";
 import {ISearchedUser} from "../shared/interfaces/searched-user";
 import {MessageService} from "../shared/services/message.service";
-import {FollowersChartService} from "../shared/services/followers-chart.service";
 import {IUserFollowerChart} from "../shared/interfaces/user-to-follower-chart";
 
 @Component({
